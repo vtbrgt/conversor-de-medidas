@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Conversor de Medidas</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="bg_gradiente">
+        <header>
+          <p class="data_hora">Data e hora local</p>
+          <img src="imagens/arrow-down-wide-short-solid.svg" />
+        </header>
+
+        <h1>◜Conversor de Medidas◞</h1>
+
+        <form>
+          <input type="number" id="valor_a_converter" placeholder="0" />
+          <select name="medidas" id="medidas">
+            <option value="cm">km</option>
+            <option value="m" selected>m</option>
+            <option value="km">cm</option>
+          </select>
+        </form>
+      </div>
+
+      <div class="setas"></div>
+
+      <span class="resultado">00</span>
+      <select name="medidas_resultado" id="medidas resultado">
+        <option value="cm">km</option>
+        <option value="m">m</option>
+        <option value="km" selected>cm</option>
+      </select>
+    </main>
+
+    <footer>
+      <p>
+        Made with ❤ by
+        <a href="https://www.github.com/vtbrgt">Vitor Borgatte</a>
+      </p>
+    </footer>
+  </body>
+</html>
