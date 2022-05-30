@@ -46,11 +46,12 @@ main {
 
 .bg_gradiente h1::before {
   content: '';
-  display: inline-block;
+  display: block;
   height: 1.5px;
   width: 65%;
   text-align: start;
   background-color: #fefefe;
+  margin: 0 0 1rem 3.5rem;
 }
 
 .bg_gradiente img {
@@ -64,9 +65,13 @@ main header {
   padding: 0.5rem 0.8rem 0 0.8rem;
 }
 
+main header i {
+  margin-top: 0.5rem;
+}
+
 .data_hora {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 form {
@@ -89,4 +94,42 @@ form {
   -webkit-appearance: none;
   margin: 0;
   -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+footer {
+  text-align: center;
+}
+
+.setas {
+  display: inline;
+  /* width: 20px;
+  height: 20px; */
+  position: absolute;
+  top: 47%;
+  right: 10%;
+  padding: 0.5rem;
+  background-color: #fefefe;
+  font-size: 18px;
+  border-radius: 3px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.12);
+}
+
+.setas p {
+  color: rgb(207, 175, 255);
+}
+
+.resultados {
+  height: 50vh;
+}
+
+.resultado_conversao {
+  width: 10rem;
+  height: 5rem;
+  color: rgb(207, 175, 255);
+  border-bottom: 3px solid rgb(207, 175, 255);
+  font-size: 58px;
+  font-family: inherit;
+  font-weight: 100;
 }

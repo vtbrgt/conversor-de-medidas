@@ -8,13 +8,17 @@
     <title>Conversor de Medidas</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4175a75404.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
       <div class="bg_gradiente">
         <header>
-          <p class="data_hora">Data e hora local</p>
-          <img src="imagens/arrow-down-wide-short-solid.svg" />
+          <p class="data_hora"></p>
+          <i class="fa-solid fa-arrow-down-wide-short fa-lg"></i>
         </header>
 
         <h1>◜Conversor de Medidas◞</h1>
@@ -29,21 +33,24 @@
         </form>
       </div>
 
-      <div class="setas"></div>
+      <div class="setas"><p>🠥 🠧</p></div>
 
-      <span class="resultado">00</span>
-      <select name="medidas_resultado" id="medidas resultado">
-        <option value="cm">km</option>
-        <option value="m">m</option>
-        <option value="km" selected>cm</option>
-      </select>
+      <form class="resultados">
+        <span class="resultado_conversao">00</span>
+        <select name="medidas_resultado" id="medidas resultado">
+          <option value="cm">km</option>
+          <option value="m">m</option>
+          <option value="km" selected>cm</option>
+        </select>
+      </form>
     </main>
 
-    <footer>
+    <!--<footer>
       <p>
         Made with ❤ by
         <a href="https://www.github.com/vtbrgt">Vitor Borgatte</a>
       </p>
-    </footer>
+    </footer>-->
+    <script src="main.js"></script>
   </body>
 </html>
