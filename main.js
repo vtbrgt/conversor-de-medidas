@@ -1,37 +1,37 @@
 /* DATA E HORA DINÂMICOS */
-data = new Date();
-const dataHora = document.querySelector('.data_hora');
-nomeMes = new Array(
-  'janeiro',
-  'fevereiro',
-  'março',
-  'abril',
-  'maio',
-  'junho',
-  'agosto',
-  'outubro',
-  'novembro',
-  'dezembro'
-);
+const atualizaDataEHora = () => {
+  data = new Date();
+  const relogio = document.querySelector('.data_hora');
+  nomeMes = new Array(
+    'janeiro',
+    'fevereiro',
+    'março',
+    'abril',
+    'maio',
+    'junho',
+    'agosto',
+    'outubro',
+    'novembro',
+    'dezembro'
+  );
+  const dia = data.getDate();
+  const mes = nomeMes[data.getMonth()];
+  const ano = data.getFullYear();
+  const horas = data.getHours();
+  const minutos = data.getMinutes();
+  const segundos = data.getSeconds();
 
-function atualizaDataEHora() {
-  let hora = data.getHours();
-  let minuto = data.getMinutes();
-  let segundo = data.getSeconds();
+  const hora = horas < 10 ? `0${horas}` : horas;
+  const minuto = minutos < 10 ? `0${minutos}` : minutos;
+  const segundo = segundos < 10 ? `0${segundos}` : segundos;
 
-  dataHora.innerHTML =
-    data.getDate() +
-    ' de ' +
-    nomeMes[data.getMonth()] +
-    ' de ' +
-    data.getFullYear() +
-    ', ' +
-    hora +
-    ':' +
-    minuto +
-    ':' +
-    segundo;
-  setTimeout('atualizaDataEHora()', 500);
-}
+  relogio.innerHTML = `${dia} de ${mes} de ${ano}, ${hora}:${minuto}:${segundo}`;
+};
 
-document.addEventListener('load', atualizaDataEHora());
+setInterval(() => {
+  atualizaDataEHora();
+}, 1000);
+
+/* CONVERSÃO DE VALORES */
+const valorAConverter = document.querySelector('#valor_a_converter'); // parseFloat()
+const medidaAConverter = document.querySelector('#medidas').value;

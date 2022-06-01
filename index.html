@@ -24,11 +24,16 @@
         <h1>◜Conversor de Medidas◞</h1>
 
         <form>
-          <input type="number" id="valor_a_converter" placeholder="0" />
+          <input
+            type="number"
+            id="valor_a_converter"
+            placeholder="0"
+            autofocus
+          />
           <select name="medidas" id="medidas">
-            <option value="cm">km</option>
+            <option value="km">km</option>
             <option value="m" selected>m</option>
-            <option value="km">cm</option>
+            <option value="cm">cm</option>
           </select>
         </form>
       </div>
@@ -38,9 +43,9 @@
       <form class="resultados">
         <span class="resultado_conversao">00</span>
         <select name="medidas_resultado" id="medidas resultado">
-          <option value="cm">km</option>
+          <option value="km">km</option>
           <option value="m">m</option>
-          <option value="km" selected>cm</option>
+          <option value="cm" selected>cm</option>
         </select>
       </form>
     </main>
