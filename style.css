@@ -139,7 +139,12 @@ footer {
 
 @media (min-width: 1024px) {
   body {
-    background: #e9e9e9;
+    background: linear-gradient(
+      365deg,
+      rgb(232, 200, 255) 4%,
+      rgb(231, 209, 255) 52%,
+      rgb(224, 203, 255) 99%
+    );
   }
 
   main {
@@ -151,5 +156,6 @@ footer {
 
   .setas {
     right: 35%;
+    font-size: 24px;
   }
 }
