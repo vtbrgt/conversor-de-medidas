@@ -84,6 +84,25 @@ form {
   gap: 1.5rem;
 }
 
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 12%;
+  font-family: inherit;
+  outline: none;
+  color: #666666;
+  border: 2px solid #fefefe;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.15rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: transparent;
+  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+}
+
 #valor_a_converter {
   all: unset;
   width: 10rem;
@@ -102,13 +121,25 @@ form {
 
 footer {
   text-align: center;
+  background-color: #fefefe;
+  color: rgb(207, 175, 255);
+}
+
+footer a {
+  text-decoration: none;
+  color: #666666;
+}
+
+footer a:hover {
+  transition: all 1s ease;
+  color: aqua;
 }
 
 .setas {
   display: inline;
   /* width: 20px;
   height: 20px; */
-  position: absolute;
+  position: fixed;
   top: 47%;
   right: 10%;
   padding: 0.5rem;
@@ -126,6 +157,10 @@ footer {
 .resultados {
   height: 50vh;
   background-color: #fefefe;
+}
+
+#medidas2 {
+  border-color: rgb(207, 175, 255);
 }
 
 .resultado_conversao {
