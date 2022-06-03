@@ -25,29 +25,29 @@
         <h1>◜Conversor de Medidas◞</h1>
 
         <form>
+          <select name="medidas" id="medidas">
+            <option value="km">km</option>
+            <option value="m" selected>m</option>
+            <option value="cm">cm</option>
+          </select>
           <input
             type="number"
             id="valor_a_converter"
             placeholder="0"
             autofocus
           />
-          <select name="medidas" id="medidas">
-            <option value="km">km</option>
-            <option value="m" selected>m</option>
-            <option value="cm">cm</option>
-          </select>
         </form>
       </div>
 
       <div class="setas"><p>🠥 🠧</p></div>
 
       <form class="resultados">
-        <span class="resultado_conversao">00</span>
         <select name="medidas_resultado" id="medidas2">
           <option value="km">km</option>
           <option value="m">m</option>
           <option value="cm" selected>cm</option>
         </select>
+        <span class="resultado_conversao">00</span>
       </form>
     </main>
 
