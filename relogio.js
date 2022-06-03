@@ -31,7 +31,3 @@ const atualizaDataEHora = () => {
 setInterval(() => {
   atualizaDataEHora();
 }, 1000);
-
-/* CONVERSÃO DE VALORES */
-const valorAConverter = document.querySelector('#valor_a_converter'); // parseFloat()
-const medidaAConverter = document.querySelector('#medidas').value;
