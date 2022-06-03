@@ -89,13 +89,13 @@ select {
   border: none;
   padding: 0 1em 0 0;
   margin: 0;
-  width: 12%;
+  width: 15%;
   font-family: inherit;
   outline: none;
   color: #666666;
   border: 2px solid #fefefe;
   border-radius: 0.25em;
-  padding: 0.25em 0.5em;
+  padding: 0.25em 0.5em 0.25em 0;
   font-size: 1.15rem;
   cursor: pointer;
   line-height: 1.1;
